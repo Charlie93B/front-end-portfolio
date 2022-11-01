@@ -24,6 +24,17 @@ main {
   margin-top: 20px;
 }
 
+fieldset {
+  border: yellow solid 5px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+legend {
+  padding: 10px;
+  font-size: 20px;
+}
+
 /* Reusable Classes */
 
 .flex {
@@ -53,6 +64,11 @@ main {
 
 .flex-between {
   justify-items: space-around;
+  align-items: center;
+}
+
+.flex-space {
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -264,20 +280,18 @@ h1 {
   color: red;
 }
 
-
-
-
-
-fieldset {
-  border: yellow solid 5px;
-  border-radius: 10px;
-  height: 100%;
+.contact p {
+  margin: 20px;
 }
 
-legend {
-  padding: 10px;
-  font-size: 20px;
+.contact a:hover {
+  border-bottom: #00FF00 solid 1px;
 }
+
+.contact-columns {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 
 /* media queries */
 
