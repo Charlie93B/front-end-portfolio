@@ -61,7 +61,7 @@ main {
 }
 
 .page-section {
-  height: 400px;
+  /* height: 400px; */
   margin: 20px;
 }
 
@@ -186,6 +186,7 @@ h1 {
 
 #about p {
   color: lightblue;
+  margin: 10px;
 }
 
 /* Projects CSS */
@@ -198,8 +199,55 @@ h1 {
   color: yellow;
 }
 
-#projects p {
-  color: yellow;
+.projects-grid {
+  grid-template-areas: 'main main'
+                       'one two'
+                       'three four';
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+
+.projects-grid a {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  border: #00FF00 solid 5px;
+}
+
+.projects-grid a:hover {
+  opacity: 0.7;
+}
+
+.grid-main {
+  grid-area: main;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.grid-one {
+  grid-area: one;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.grid-two {
+  grid-area: two;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.grid-three {
+  grid-area: three;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.grid-four {
+  grid-area: four;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+
+.project-label {
+  align-self: flex-end;
+  margin: 20px;
+  border: #00FF00 solid 5px;
+  font-size: 22px;
 }
 
 /* Contact CSS */
@@ -248,6 +296,16 @@ legend {
 
   .heading {
     justify-content: space-around;
+  }
+
+  .projects-grid {
+    grid-template-areas: 'main'
+                         'main'
+                         'one'
+                         'two'
+                         'three'
+                         'four';
+    grid-template-rows: repeat(6, 1fr);                     
   }
 }
 
