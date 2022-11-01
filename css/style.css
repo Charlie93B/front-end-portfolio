@@ -162,3 +162,20 @@ h1 {
     justify-content: space-around;
   }
 }
+
+/* hero banner CSS */
+
+.hero-image {
+  background-image: url(../images/binary-code-475664_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vw;
+}
+
+.hero-text {
+  border: #00FF00 solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: default;
+}
