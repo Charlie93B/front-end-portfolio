@@ -1,23 +1,164 @@
 * {
-  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  color: #00FF00;
+  background-color: rgb(24, 24, 24);
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+/* Elements CSS */
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+hr {
+  border: 1px solid #00FF00;
 }
 
-p {
-  margin: 0;
+/* Reusable Classes */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-end {
+  justify-self: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  justify-items: space-around;
+  align-items: center;
+}
+
+.page-wrapper {
+  width: clamp(0px, 100%, 1200px);
+}
+
+/* Nav CSS */
+
+h1 {
+  font-size: clamp(22px, 3vw, 32px);
+  margin-left: 20px;
+  font-weight: bolder;
+  color: orange;
+}
+
+#logo {
+  height: clamp(50px, 10vw, 70px);
+  width: clamp(50px, 10vw, 70px);
+  margin-left: 5px;
+}
+
+.nav-links {
+  margin-right: 5px;
+}
+
+.nav-links a {
+  padding: 5px;
+  margin: 5px;
+  border: #00FF00 solid 1px;
+  border-radius: 5px;
+  font-size: clamp(12px, 3vw, 16px);
+  text-align: center;
+}
+
+.nav-links a:first-child:hover, 
+.nav-links a:nth-child(2):hover, 
+.nav-links a:nth-child(3):hover, 
+.nav-links a:nth-child(4):hover {
+  border: #00FF00 solid 1px;
+  color: #00FF00;
+}
+
+.nav-links a:first-child {
+  border: lightblue solid 1px;
+  color: lightblue;
+}
+
+.nav-links a:nth-child(2) {
+  border: yellow solid 1px;
+  color: yellow;
+}
+
+.nav-links a:nth-child(3) {
+  border: red solid 1px;
+  color: red;
+}
+
+.nav-links a:nth-child(4) {
+  border: magenta solid 1px;
+  color: magenta;
+}
+
+/* Hamburger CSS */
+
+#hamburger {
+  border: #00FF00 solid 1px;
+  margin: 5px;
+  height: 20px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger div {
+  height: 1px;
+  width: 18px;
+  background-color: #00FF00;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.heading {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-links.show {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 760px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .heading {
+    justify-content: space-around;
+  }
 }

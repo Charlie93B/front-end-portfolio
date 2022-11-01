@@ -7,31 +7,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Charlie Bayford-Front End Developer</title>
   <link rel="icon" type="image/x-icon" href="./images/coding-1294373_960_720.png">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>       
-    <nav>
-      <div>
-        <a href="./index.html">
-          <img src="./images/coding-1294373_960_720.png">
+  <header class="flex flex-row flex-center">       
+    <nav class="flex flex-row flex-between page-wrapper" id="nav">
+      <div class="flex flex-row heading">
+        <a href="./index.html" class="flex flex-row flex-center">
+          <img id="logo" src="./images/coding-1294373_960_720.png">
           <h1>Charlie Bayford</h1>
         </a>
-        <button id="hamburger">
+        <button id="hamburger" class="flex flex-column flex-center flex-end">
           <div></div>
           <div></div>
           <div></div>
         </button>        
+      </div>
+      <div class="flex flex-row flex-between nav-links" id="navLinks">        
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        <a href="#">CV</a>
       </div> 
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-      <a href="#">CV</a>
+      
     </nav>
   </header>
-
+  <hr>
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
