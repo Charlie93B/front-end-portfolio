@@ -20,6 +20,10 @@ hr {
   border: 1px solid #00FF00;
 }
 
+main {
+  margin-top: 20px;
+}
+
 /* Reusable Classes */
 
 .flex {
@@ -54,6 +58,15 @@ hr {
 
 .page-wrapper {
   width: clamp(0px, 100%, 1200px);
+}
+
+.page-section {
+  height: 400px;
+  margin: 20px;
+}
+
+.section-grid-columns {
+  grid-template-columns: 1fr 4fr;
 }
 
 /* Nav CSS */
@@ -143,6 +156,81 @@ h1 {
   margin-bottom: 15px;
 }
 
+/* hero banner CSS */
+
+.hero-image {
+  background-image: url(../images/binary-code-475664_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vw;
+}
+
+.hero-text {
+  border: #00FF00 solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+/*about CSS */
+
+.about-content {
+  border: lightblue solid 5px;
+  border-radius: 10px;
+}
+
+.about-title {
+  color: lightblue;
+}
+
+#about p {
+  color: lightblue;
+}
+
+/* Projects CSS */
+
+.project-content {
+  border: yellow solid 5px;
+}
+
+.project-title {
+  color: yellow;
+}
+
+#projects p {
+  color: yellow;
+}
+
+/* Contact CSS */
+
+.contact-content {
+  border: red solid 5px;
+}
+
+.contact-title {
+  color: red;
+}
+
+#contact p {
+  color: red;
+}
+
+
+
+
+
+fieldset {
+  border: yellow solid 5px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+legend {
+  padding: 10px;
+  font-size: 20px;
+}
+
 /* media queries */
 
 @media screen and (max-width: 760px) {
@@ -163,19 +251,3 @@ h1 {
   }
 }
 
-/* hero banner CSS */
-
-.hero-image {
-  background-image: url(../images/binary-code-475664_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 20vw;
-}
-
-.hero-text {
-  border: #00FF00 solid 2px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: default;
-}
